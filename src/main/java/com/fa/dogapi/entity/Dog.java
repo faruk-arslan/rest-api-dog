@@ -1,4 +1,4 @@
-package com.fa.bootstrap.entity;
+package com.fa.dogapi.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

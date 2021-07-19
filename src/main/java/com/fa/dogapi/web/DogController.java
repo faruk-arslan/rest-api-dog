@@ -13,8 +13,13 @@ import java.util.List;
 
 @RestController
 public class DogController {
-    @Autowired
+
     private DogServiceImpl dogService;
+
+    @Autowired
+    public void setDogService(DogServiceImpl dogService) {
+        this.dogService = dogService;
+    }
 
     @GetMapping("/dogs")
     public ResponseEntity<List<Dog>> getAllDogs(){
